@@ -25,36 +25,36 @@ class MainActivity : AppCompatActivity() {
         binding.btnCalcular.setBackgroundColor(Color.GRAY)
     }
 
+    //esta funcion le pone escuchas a cada TextEdit, para verificar si están llenos o no
     private fun setupTextWatchers() {
         binding.etPersona.addTextChangedListener { nombre ->
-            val nombreText = nombre.toString().trim()
             updateButtonState()
         }
 
         binding.etCurso.addTextChangedListener { curso ->
-            val cursoText = curso.toString().trim()
             updateButtonState()
         }
 
         binding.etNota1.addTextChangedListener { nota1 ->
-            val nota1Text = nota1.toString().trim()
             updateButtonState()
         }
 
         binding.etNota2.addTextChangedListener { nota2 ->
-            val nota2Text = nota2.toString().trim()
             updateButtonState()
         }
     }
     private fun updateButtonState() {
+        //Guarda la informacion del TextEdit
         val nombre = binding.etPersona.text.toString().trim()
         val curso = binding.etCurso.text.toString().trim()
         val nota1 = binding.etNota1.text.toString().trim()
         val nota2 = binding.etNota2.text.toString().trim()
 
+        //Verifica que todos los campos estén llenos
         val enableButton = nombre.isNotEmpty() && curso.isNotEmpty() && nota1.isNotEmpty() && nota2.isNotEmpty()
         binding.btnCalcular.isEnabled = enableButton
 
+        //Cambia el color del boton si está habilitado o no
         if (enableButton) {
             binding.btnCalcular.setBackgroundColor(0xFF6750A3.toInt())
         } else {
