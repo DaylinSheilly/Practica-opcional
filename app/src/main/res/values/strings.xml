@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PracticaOpcional</string>
+    <string name="calcula_tu_nota">Calcula tu Nota</string>
+    <string name="nombre_estudiante">Nombre estudiante</string>
+    <string name="pregunta_repite_curso">¿El curso ha sido realizado más de una vez?</string>
+    <string name="nombre_curso">Nombre curso</string>
+    <string name="nota_1">Digita nota 1</string>
+    <string name="nota_2">Digita nota 2</string>
+    <string name="calcular_nota">Calcular Nota</string>
+</resources>

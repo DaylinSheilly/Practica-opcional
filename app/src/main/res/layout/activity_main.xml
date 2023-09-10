@@ -1,0 +1,124 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data/>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blue"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="arial"
+            android:padding="10dp"
+            android:text="@string/calcula_tu_nota"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.widget.EditText
+            android:id="@+id/etPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/estilo_bg_redondo"
+            android:drawableStart="@drawable/ic_action_name"
+            android:drawablePadding="5dp"
+            android:padding="8dp"
+            android:hint="@string/nombre_estudiante"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/etCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/estilo_bg_redondo"
+            android:drawablePadding="5dp"
+            android:hint="@string/nombre_curso"
+            android:fontFamily="arial"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:maxLength="50"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etNota1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/estilo_bg_redondo"
+            android:drawablePadding="5dp"
+            android:hint="@string/nota_1"
+            android:fontFamily="arial"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:maxLength="50"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etNota2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/estilo_bg_redondo"
+            android:drawablePadding="5dp"
+            android:hint="@string/nota_2"
+            android:textColor="@color/black"
+            android:fontFamily="arial"
+            android:inputType="phone"
+            android:maxLength="50"
+            android:padding="12dp" />
+
+        <CheckBox
+            android:id="@+id/cb_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta_repite_curso"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="arial"
+            android:backgroundTintMode="@color/violet"
+            android:checked="false" />
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/calcular_nota"
+            android:fontFamily="arial"
+            android:backgroundTint="@color/violet"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+</layout>
